@@ -22,34 +22,6 @@ def create_table(snip):
     snip.expand_anon(anon_snippet_table)
 endglobal
 
-###########################
-# Sections and Paragraphs #
-###########################
-snippet sec "Section" b
-# ${1:Section Name} #
-$0
-endsnippet
-
-snippet ssec "Sub Section" b
-## ${1:Section Name} ##
-$0
-endsnippet
-
-snippet sssec "SubSub Section" b
-### ${1:Section Name} ###
-$0
-endsnippet
-
-snippet par "Paragraph" b
-#### ${1:Paragraph Name} ####
-$0
-endsnippet
-
-snippet spar "Paragraph" b
-##### ${1:Paragraph Name} #####
-$0
-endsnippet
-
 ###################
 # Text formatting #
 ###################
@@ -83,8 +55,8 @@ snippet ilc "Inline Code" i
 endsnippet
 
 snippet cbl "Codeblock" b
-\`\`\`
-$1
+\`\`\`$1
+$2
 \`\`\`
 $0
 endsnippet
