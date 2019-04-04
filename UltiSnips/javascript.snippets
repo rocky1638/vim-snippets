@@ -80,6 +80,12 @@ snippet gll "Console log statement"
 console.log(${VISUAL}${1:statement})`!p snip.rv = semi(snip)`${0}
 endsnippet
 
+snippet gllv "Verbose console log statement"
+console.log('*****************');
+console.log(${VISUAL}${1:statement})`!p snip.rv = semi(snip)`${0}
+console.log('*****************');
+endsnippet
+
 snippet us
 'use strict'`!p snip.rv = semi(snip)`
 endsnippet
